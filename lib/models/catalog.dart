@@ -52,7 +52,7 @@ class Item {
 
   factory Item.fromMap(Map<String, dynamic> map) {
     // ignore: unnecessary_null_comparison
-    if (map == null) return null;
+    // if (map == null) return null;
 
     return Item(
       id: map['id'],
