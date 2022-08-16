@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 class CatalogModel {
-  static late List<Item> items;
+  static late List<Item?> items;
 }
 
 class Item {
@@ -52,6 +52,7 @@ class Item {
 
   factory Item.fromMap(Map<String, dynamic> map) {
     // ignore: unnecessary_null_comparison
+    if (map == null) return null;
 
     return Item(
       id: map['id'],
